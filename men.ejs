@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Men </title>
+        <style>
+           body {
+                background-image: url('/images/bg11.png');
+                background-size: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <div float="right">
+            <form method="POST", action="/customer/cart", enctype="multipart/form-data">
+              <button type="submit"> View Cart</button>
+            </form>
+          </div>
+        <% if (arr.length) {
+            %><ul>
+              <% arr.forEach((arr) => {
+                %>
+                  <li><h1><i><%= arr %> </i>  </h1></li>
+                  <br>
+                  <br>
+                <%
+              }) %>
+            </ul><%
+          } %>
+          <form method="post", action="/customer/cart/men", enctype="multipart/form-data">
+            <input type="text", name="toBuy", placeholder="Enter the item name which you want to buy">
+            <br> <br>
+            <input type="number", name="qty", placeholder="How many?">
+            <br> <br>
+            <button type="submit"> Get this! </button>
+          </form>
+    </body>
+</html>

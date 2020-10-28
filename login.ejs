@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Login</title> 
+      
+    <style type="text/css" media="screen"> 
+        body {
+            background-image: url("/images/bg7.jpg");
+            background-size: 100%;
+        }
+        .column {
+            float: left;
+            width: 50%;
+        }     
+        button{
+            background-color: lightgray;
+            text-align: center;
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 8px;
+
+        }
+        .button1
+        {
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: gray;
+            text-align: center;
+            font-size: 20px;
+        }
+        .button1:hover
+        {
+            background-color: whitesmoke;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        label {
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        </style>
+    </style> 
+</head> 
+  
+<body>
+    <div class="row">
+        <div class="column">
+                <br>
+                <br>
+                <br>
+                <br>
+        <br><br> <br>
+        <br>
+        <br>
+                <center> <button class="button" type="submit">I am an existing customer</button> </center>
+        </div>
+        <div class="column", style="background-color:burlywood; height: 500px; width:500px; opacity: 0.9;">
+            <br><br><br>
+            <label><center> <%=msge%></center> </label>
+            <form method="POST", action="/customer/login/details", enctype="multipart/form-data">
+                <br> <br> <br>
+                <center> <input type="text", name="uname", placeholder="Username"></center>
+                <br> <br> <br>
+                <center><input type="password", name="upass", placeholder="password"> </center>
+                <br> <br> <br>
+                <center><button type="submit", class="button1">Check out our products...</button> </center>
+            </form>
+        </div>
+    </div>
+</body> 
+  
+</html>     

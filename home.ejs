@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Home Page</title> 
+      
+    <style type="text/css" media="screen"> 
+        body { 
+            background-image: url("images/download.png"); 
+        } 
+        div{
+            background-color: pink;
+            text-decoration-color: white; 
+            font-size:6em; 
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .button{
+            background-color: skyblue;
+            text-align: center;
+            font-size: 30px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 12px;
+            border: 2px solid black;
+            color: black;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+        }
+        .button:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid blue;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+    </style> 
+</head> 
+  
+<body> 
+    <div> <center>BAZAAR</center></div>
+    <br>
+    <br>
+    <p><center> <i> <strong></strong><h2> Welcome to Bazaar, a one stop solution to all your e-shopping needs.</h2> </strong> </i> </center> </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form method="POST", action="/customer", enctype="multipart/form-data">
+       <center> <button class="button" type="submit"> I am a customer</button> </center> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <form method="POST", action="/admin", enctype="multipart/form-data">
+        <center> <button class="button" type="submit"> Administrator login</button> </center>
+    </form>
+    </body> 
+  
+</html>     
